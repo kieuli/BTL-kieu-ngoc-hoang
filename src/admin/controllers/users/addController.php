@@ -22,7 +22,7 @@
 						$strToken = $token->generate(10);
 
 						$this->Model->execute("insert into users(name,email,password,token) values('$username', '$email','$password','$strToken')");
-						header("location: index.php?controller=users/list");
+						header("location: ../../index.php?controller=users/list");
 					}
 
 					break;

@@ -15,7 +15,7 @@
 					$catalog = $_POST["catalog"];
 					$token = new Token();
 					$strToken = $token->generate(10);
-
+									
 					if($_FILES["image"]["name"]){
 						$image = "public/images/".time().$_FILES["image"]["name"];
 						move_uploaded_file($_FILES["image"]["tmp_name"], "../public/images/".time().$_FILES["image"]["name"]);
@@ -26,7 +26,7 @@
 					echo "<meta http-equiv='refresh' content='0; URL=index.php?controller=blog/list'>";
 					break;
 			}
-
+								
 			include "views/blog/addView.php";
 		}
 	}

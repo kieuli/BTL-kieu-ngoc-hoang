@@ -30,7 +30,9 @@
 		public function getId($idName, $tblName){
 			global $con;
 			$result = mysqli_query($con,"select $idName from $tblName order by $idName desc limit 0,1");
-			$rows = mysqli_fetch_array($reulst);
+			$rows = mysqli_fetch_array($result);
 			return $rows;
 		}
 	}
+?>
+

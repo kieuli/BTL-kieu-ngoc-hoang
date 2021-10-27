@@ -13,6 +13,7 @@
 		<td width="50px;">STT</td>
 		<td width="200px;">Name</td>
 		<td>Email</td>
+		<td>Phân Quyền</td>
 		<td width="100px;">Update</td>
 		<td width="100px;">delete</td>
 	</tr>
