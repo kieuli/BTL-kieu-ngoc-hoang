@@ -38,8 +38,8 @@
 					<tr>
 						<td></td>
 						<td>
-							<input type="submit" value="Tạo tài khoản" class="btn btn-primary">
-							<a href="index.php?controller=users/list" class="btn btn-success">Quay lại</a>
+							<input type="submit" value="Thêm tài khoản" class="btn btn-primary">
+							<a href="index.php?controller=users/list" class="btn btn-success">Hủy</a>
 						</td>
 					</tr>
 				</table>

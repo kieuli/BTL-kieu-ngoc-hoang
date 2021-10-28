@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 25, 2021 lúc 02:59 PM
+-- Thời gian đã tạo: Th10 28, 2021 lúc 06:02 PM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.10
 
@@ -61,7 +61,7 @@ CREATE TABLE `menu_list_blog` (
 --
 
 CREATE TABLE `users` (
-  `id_users` int(10) UNSIGNED NOT NULL,
+  `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -77,10 +77,10 @@ CREATE TABLE `users` (
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
-INSERT INTO `users` (`id_users`, `name`, `email`, `password`, `token`, `created`, `updated`, `permission`, `activated`, `varkey`) VALUES
-(3, 'lâm thị kiều', 'likieu2607@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '', '2021-10-24 10:36:03', '2021-10-25 12:58:20', 0, 1, ''),
-(4, 'li kiều', '1951060022@e.tlu.edu.vn', 'fcea920f7412b5da7be0cf42b8c93759', '', '2021-10-24 10:36:51', '2021-10-25 12:58:40', 0, 1, ''),
-(5, 'yến ngọc', 'nyn11092001@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '', '2021-10-24 14:18:07', '2021-10-24 14:18:07', 0, 0, '');
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `token`, `created`, `updated`, `permission`, `activated`, `varkey`) VALUES
+(1, 'lâm thị kiều', 'likieu2607@gmail.com', '202cb962ac59075b964b07152d234b70', 'djbdjbjxs466fgfb', '2021-10-28 13:51:47', '2021-10-28 14:09:08', 0, 0, ''),
+(11, 'li kiều', '1951060022@e.tlu.edu.vn', 'e10adc3949ba59abbe56e057f20f883e', 'xLIqlrN0YI', '2021-10-28 14:30:53', '2021-10-28 14:30:53', 0, 0, ''),
+(12, '', 'hnlan1107@gmaikl.com', '81dc9bdb52d04dc20036dbd8313ed055', 'oSnzWfvJsA', '2021-10-28 14:48:49', '2021-10-28 15:38:25', 0, 0, '');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -102,7 +102,7 @@ ALTER TABLE `menu_list_blog`
 -- Chỉ mục cho bảng `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id_users`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT cho các bảng đã đổ
@@ -124,7 +124,7 @@ ALTER TABLE `menu_list_blog`
 -- AUTO_INCREMENT cho bảng `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_users` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

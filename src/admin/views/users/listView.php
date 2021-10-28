@@ -13,7 +13,6 @@
 		<td width="50px;">STT</td>
 		<td width="200px;">Name</td>
 		<td>Email</td>
-		<td>Phân Quyền</td>
 		<td width="100px;">Update</td>
 		<td width="100px;">delete</td>
 	</tr>
@@ -27,8 +26,8 @@
 		<td style="text-align: center;"><?php echo $stt; ?></td>
 		<td><?php echo $value["name"]; ?></td>
 		<td><?php echo $value["email"] ?></td>
-        <td><a class="text-danger" href="deleteStaff.php?id=<?php echo $phoneBook['manv']; ?>"><i class="fas fa-trash"></i></a></td>
-		<td><a onclick="window.confirm('Bạn có muốn xóa???');" href="index.php?controller=users/list&id=<?php echo $value["token"]; ?>&act=delete"><i class="fas fa-trash"></i></a></td>
+        <td><a class="text-danger" href="index.php?controller=users/edit&id=<?php echo $value["token"];?>"><i class="fas fa-trash"></i></a></td>
+		<td><a onclick="window.confirm('Bạn có chắc chăn muốn xóa ?');" href="index.php?controller=users/list&id=<?php echo $value["token"]; ?>&act=delete"><i class="fas fa-trash"></i></a></td>
 	</tr>
 	<?php } ?>
 </table>

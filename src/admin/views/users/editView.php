@@ -26,7 +26,7 @@
 					<tr>
 						<td>Mật khẩu người dùng</td>
 						<td>
-							<input type="password" name="password" placeholder="Nếu muốn thay đổi mật khẩu thì mời nhập vào" class="form-control">
+							<input type="password" name="password" placeholder="mật khẩu mới" class="form-control">
 						</td>
 					</tr>
 					<tr>

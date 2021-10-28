@@ -16,7 +16,7 @@
 			// dem tong so ban ghi
 			$number = $this->Model->count("select * from users");
 			// so ban ghi hien thi tren 1 trang
-			$num_page = 2;
+			$num_page = 5;
 			// so trang can hien thi
 			$page_show = ceil($number/$num_page);
 			// lay trang hien tai tren thanh url
