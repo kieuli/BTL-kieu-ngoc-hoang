@@ -220,5 +220,5 @@ ul.alert-dropdown {
 
 .paginate { margin-left: -40px; list-style: none;}
 .paginate li { float: left; border: 1px solid silver; padding: 3px 10px; margin-left: -1px; }
-.paginate li:hover { background: orange; border: 1px solid orange; }
+.paginate li:hover { background: rgb(79, 64, 206); border: 1px solid rgb(87, 43, 207); }
 .paginate li:hover a { color: white; }

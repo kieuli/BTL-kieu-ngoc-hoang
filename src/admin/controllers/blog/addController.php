@@ -25,11 +25,7 @@
 					mysqli_set_charset($con,"UTF8");
 
 					$sql = "INSERT INTO `menu_list_blog`(`id`,`images`, `name`, `metaTitle`, `catalog`, `description`, `content`, `token`, `dateTime`) VALUES('$id','$image','$name', '$metaTitle', $catalog, '$description', '$content', '$strToken', '$dateTime')";
-					// print_r($sql).die("Ok");
 					mysqli_query($con,$sql);
-
-					//$this->Model->execute("insert into menu_list_blog(avatar, name, metaTitle, catalog, description, content, token, dateTime) values('$image','$name', '$metaTitle', $catalog, '$description', '$content', '$strToken', '$dateTime')");
-
 					echo "<meta http-equiv='refresh' content='0; URL=index.php?controller=blog/list'>";
 					break;
 			}
