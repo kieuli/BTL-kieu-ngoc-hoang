@@ -10,7 +10,7 @@
 					$name = $_POST["topic"];
 					$metaTitle = RemoveString($name);
 					$this->Model->execute("insert into menu_catalog(name, metaTitle) values('$name','$metaTitle')");
-
+					// header("location: index.php?controller=catalog_blog/list");
 					echo "<meta http-equiv='refresh' content='0; URL=index.php?controller=catalog_blog/list'>";
 					break;
 

@@ -12,8 +12,8 @@
 	<tr>
 		<td width="50px;">STT</td>
 		<td width="130px">Image</td>
-		<td>Name</td>
-		<td width="120px;">Catalog</td>
+		<td>Tên bài viết</td>
+		<td width="120px;">chủ đề</td>
 		<td width="120px">Date created</td>
 		<td width="80px;">More</td>
 	</tr>
