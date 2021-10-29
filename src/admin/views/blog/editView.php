@@ -34,7 +34,7 @@
 					</div>
 					<!-- btn -->
 					<input type="submit" class="btn btn-primary" value="Cập nhật">
-					<a href="index.php?controller=blog/list" class="btn btn-success">Quay lại</a>
+					<a href="index.php?controller=blog/list" class="btn btn-success">Hủy</a>
 				</div>
 			</form>
 		</div>

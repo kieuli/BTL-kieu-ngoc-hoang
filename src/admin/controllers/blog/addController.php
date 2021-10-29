@@ -15,14 +15,17 @@
 					$catalog = $_POST["catalog"];
 					$token = new Token();
 					$strToken = $token->generate(10);
-									
+					$id = '';			
 					if($_FILES["image"]["name"]){
 						$image = "public/images/".time().$_FILES["image"]["name"];
 						move_uploaded_file($_FILES["image"]["tmp_name"], "../public/images/".time().$_FILES["image"]["name"]);
 					}
 
-					$this->Model->execute("insert into menu_list_blog(avatar, name, metaTitle, catalog, description, content, token, dateTime) values('$image','$name', '$metaTitle', $catalog, '$description', '$content', '$strToken', '$dateTime')");
+					$con = mysqli_connect("localhost","root","","btl") or die("Can not connect to MySQL");
+					mysqli_set_charset($con,"UTF8");
 
+					$sql = "INSERT INTO `menu_list_blog`(`id`,`images`, `name`, `metaTitle`, `catalog`, `description`, `content`, `token`, `dateTime`) VALUES('$id','$image','$name', '$metaTitle', $catalog, '$description', '$content', '$strToken', '$dateTime')";
+					mysqli_query($con,$sql);
 					echo "<meta http-equiv='refresh' content='0; URL=index.php?controller=blog/list'>";
 					break;
 			}
