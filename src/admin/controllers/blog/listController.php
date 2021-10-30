@@ -15,8 +15,8 @@
 
 			// dem tong so ban ghi
 			$number = $this->Model->count("select * from menu_list_blog");
-			// so ban ghi hien thi tren 1 trang
-			$num_page = 10;
+			// so ban ghi hien thi tren 1 trang=5
+			$num_page = 5;
 			// so trang can hien thi
 			$page_show = ceil($number/$num_page);
 			// lay trang hien tai tren thanh url

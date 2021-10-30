@@ -11,7 +11,6 @@
 <table class="table table-bordered">
 	<tr>
 		<td width="50px;">STT</td>
-		<td width="130px">Image</td>
 		<td>Tên bài viết</td>
 		<td width="120px;">chủ đề</td>
 		<td width="120px">Date created</td>
@@ -24,9 +23,7 @@
 	?>
 	<tr>
 		<td style="text-align: center;"><?php echo $stt; ?></td>
-		<td>
-			<img src="../<?php echo $value["avatar"] ?>" alt="Error" width="100%">
-		</td>
+		
 		<td><?php echo $value["name"] ?></td>
 		<td>
 			<?php
