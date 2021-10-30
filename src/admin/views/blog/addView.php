@@ -48,7 +48,7 @@
 					</script>
 				</div>
 				<input type="submit" class="btn btn-primary" value="Thêm bài viết" style="margin-top: 10px;">
-				<a href="index.php?controller=blog/list" class="btn btn-success" style="margin-top: 10px;">Quay lại</a>
+				<a href="index.php?controller=blog/list" class="btn btn-success" style="margin-top: 10px;">Hủy</a>
 			</form>
 		</div>
 	</div>

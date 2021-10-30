@@ -11,7 +11,7 @@
 	<!-- favicon icon -->
 	<link rel="shortcut icon" href="public/client/images/icon/favicon.png">
 
-	<title>Rosy - Beautiful HTML5 Blog Template</title>
+	<title>KHN-website cá nhân</title>
 
 	<!-- common css -->
 	<link rel="stylesheet" href="public/client/css/bootstrap.min.css">
@@ -22,12 +22,6 @@
 	<link rel="stylesheet" href="public/client/css/slicknav.css">
 	<link rel="stylesheet" href="public/client/css/style.css">
 	<link rel="stylesheet" href="public/client/css/responsive.css">
-
-	<!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="public/client/js/html5shiv.js"></script>
-    <script src="public/client/js/respond.js"></script>
-    <![endif]-->
 
 </head>
 
