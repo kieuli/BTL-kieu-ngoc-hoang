@@ -23,7 +23,7 @@
             if( md5($password) == $pass_hash ){
                 $_SESSION["account"] = $email;
                 $_SESSION["name"] = $check["name"];
-                header("location: ../app/views/home.php");
+                header("location: ../../");
             
             }else{
                 echo "Kiểm tra lại Mật khẩu";

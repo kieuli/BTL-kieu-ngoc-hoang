@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>DevBlog - Bootstrap 5 Blog Template For Developers</title>
+    <title>My blog</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -29,7 +29,6 @@
 	    
 	    <section class="cta-section theme-bg-light py-5">
 		    <div class="container text-center single-col-max-width">
-			    <h2 class="heading">DevBlog - A Blog Template Made For Developers</h2>
 			    <div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
 			    <div class="single-form-max-width pt-3 mx-auto">
 				    <form class="signup-form row g-2 g-lg-2 align-items-center">
@@ -49,36 +48,6 @@
 	    <section class="blog-list px-3 py-5 p-md-5">
 		    <div class="container single-col-max-width">
 			    <div class="item mb-5">
-				    <div class="row g-3 g-xl-0">
-					    
-				    </div><!--//row-->
-			    </div><!--//item-->
-			    <div class="item mb-5">
-				    <div class="row g-3 g-xl-0">
-					    
-				    </div><!--//row-->
-			    </div><!--//item-->
-			    
-			    <div class="item mb-5">
-				    <div class="row g-3 g-xl-0">
-					   
-				    </div><!--//row-->
-			    </div><!--//item-->
-			    
-			    <div class="item mb-5">
-				    <div class="row g-3 g-xl-0">
-					    
-				    </div><!--//row-->
-			    </div><!--//item-->
-			    
-			    
-			    <div class="item mb-5">
-				    <div class="row g-3 g-xl-0">
-					    
-				    </div><!--//row-->
-			    </div><!--//item-->
-			    
-			    <div class="item">
 				    <div class="row g-3 g-xl-0">
 					    
 				    </div><!--//row-->

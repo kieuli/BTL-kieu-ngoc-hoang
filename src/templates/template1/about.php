@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>DevBlog - Bootstrap 5 Blog Template For Developers</title>
+    <title>My blog</title>
     
     <!-- Meta -->
     <meta charset="utf-8">

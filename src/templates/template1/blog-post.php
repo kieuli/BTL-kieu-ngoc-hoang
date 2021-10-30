@@ -34,9 +34,11 @@
 		    <div class="container single-col-max-width">
 			    <header class="blog-post-header">
 				    <h2 class="title mb-2">Blog</h2>
-				    <div class="meta mb-3"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a  class="text-link" href="#">4 comments</a></span></div>
+                    <button class="btn "><a href="add-post.php">Thêm bài viết</a></button>
 			    </header>
-			    
+			    <main class="container">
+
+                </main>
 			    
 	    
 	    <?php 
