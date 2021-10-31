@@ -36,6 +36,30 @@
 						</td>
 					</tr>
 					<tr>
+						<td>Phân quyền người dùng</td>
+						<td>
+							<div class="form-group">
+								<label>Quyền</label>
+								<select name="permission" class="form-control">
+									<option value=1>Admin</option>
+									<option value=0>Member</option>
+									</select>
+							</div>
+						</td>
+
+					</tr>
+					<tr>
+						<td>Kích hoạt</td>
+						<td>
+						<div class="form-check">
+							<input value="1" class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" name="activated">
+							<label class="form-check-label" for="flexCheckIndeterminate" >
+								Kích hoạt tài khoản
+							</label>
+						</div>
+						</td>					
+					</tr>
+					<tr>
 						<td></td>
 						<td>
 							<input type="submit" value="Thêm tài khoản" class="btn btn-primary">
