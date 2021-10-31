@@ -4,8 +4,8 @@
 		<div class="panel-body">
 			<form action="index.php?controller=blog/edit&act=edit&id=<?php echo $value["token"] ?>" method="post" enctype="multipart/form-data">
 				<div class="col-md-3">
-					<?php if(isset($value["avatar"]) && $value["avatar"]!=""){ ?>
-						<img src="../<?php echo $value["avatar"] ?>" alt="" width="100%">
+					<?php if(isset($value["images"]) && $value["images"]!=""){ ?>
+						<img src="../<?php echo $value["images"] ?>" alt="" width="100%">
 					<?php } ?>
 					<input type="file" name="image">
 				</div>
@@ -34,7 +34,7 @@
 					</div>
 					<!-- btn -->
 					<input type="submit" class="btn btn-primary" value="Cập nhật">
-					<a href="index.php?controller=blog/list" class="btn btn-success">Quay lại</a>
+					<a href="index.php?controller=blog/list" class="btn btn-success">Hủy</a>
 				</div>
 			</form>
 		</div>

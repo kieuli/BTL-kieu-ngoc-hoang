@@ -3,7 +3,7 @@
 		<div class="panel-heading">Chi tiết bài viết</div>
 		<div class="panel-body">
 			<div class="col-md-3">
-				<img src="../<?php echo $value["avatar"] ?>" alt="Error" width="100%" />
+				<img src="../<?php echo $value["images"] ?>" alt="Error" width="100%" />
 			</div>
 			<div class="col-md-9">
 				<h2 style="margin: 0;">
