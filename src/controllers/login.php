@@ -1,8 +1,8 @@
 <?php
     
     session_start();
+
 	if($_SERVER["REQUEST_METHOD"] == "POST"){
-        
     $email      =       $_POST["email"];
     $password   =       $_POST["password"];
     
@@ -28,10 +28,9 @@
                 $_SESSION["account"] = $email;
                 $_SESSION["name"] = $name;
 					if($permission == 1){
-						header("location: ../../admin/index.php");
-					}
-                    if($permission == 0){
-						header("../");
+						header("location: ../admin/index.php");
+					}if($permission == 0){
+						header("location :../index.php");
 					}
             
             }else{

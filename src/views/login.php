@@ -215,7 +215,7 @@ p {
                         }
                     }
                 ?>
-        <form action="../controllers//login.php" method="POST" >        
+        <form action="../controllers/login.php" method="POST" >        
             <div class="form__field">
                 <label for="login__username">
                 <svg class="icon">
