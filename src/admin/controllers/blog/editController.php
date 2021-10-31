@@ -18,7 +18,7 @@
 					if(strlen($_FILES["image"]["name"]) != ""){
 						$image = "public/images/".time().$_FILES["image"]["name"];
 						move_uploaded_file($_FILES["image"]["tmp_name"], "../public/images/".time().$_FILES["image"]["name"]);
-						$this->Model->execute("update menu_list_blog set avatar='$image' where token='$id'");
+						$this->Model->execute("update menu_list_blog set images='$image' where token='$id'");
 					}
 
 
