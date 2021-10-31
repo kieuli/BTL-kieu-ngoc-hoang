@@ -26,8 +26,8 @@
 		<td style="text-align: center;"><?php echo $stt; ?></td>
 		<td><?php echo $value["name"]; ?></td>
 		<td><?php echo $value["email"] ?></td>
-        <td><a class="text-danger" href="index.php?controller=users/edit&id=<?php echo $value["token"];?>"><i class="fas fa-trash"></i></a></td>
-		<td><a onclick="window.confirm('Bạn có chắc chăn muốn xóa ?');" href="index.php?controller=users/list&id=<?php echo $value["token"]; ?>&act=delete"><i class="fas fa-trash"></i></a></td>
+        <td><a class="text-danger" href="index.php?controller=users/edit&id=<?php echo $value["token"];?>"><img src="../public/images/icon_update.png" class="img_icon" alt="icon update" ></i></a></td>
+		<td><a onclick="window.confirm('Bạn có chắc chăn muốn xóa ?');" href="index.php?controller=users/list&id=<?php echo $value["token"]; ?>&act=delete"><img src="../public/images/icon_xoa.png" class="img_icon" alt="icon_dalete" ></i></a></td>
 	</tr>
 	<?php } ?>
 </table>

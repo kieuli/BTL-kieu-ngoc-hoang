@@ -6,7 +6,7 @@
 				<input type="text" class="form-control" readonly value="<?php echo $value["name"] ?>">
 				<input type="text" name="topic" class="form-control" required placeholder="Tên chủ đề mới" style="margin: 7px 0;">
 				<input type="submit" value="Cập nhật" class="btn btn-primary">
-				<a href="index.php?controller=catalog_blog/list" class="btn btn-success">Quay lại</a>
+				<a href="index.php?controller=catalog_blog/list" class="btn btn-success">Hủy</a>
 			</form>
 		</div>
 	</div>

@@ -27,7 +27,7 @@
 				</fieldset>
 				<!-- btn -->
 				<a href="index.php?controller=blog/edit&id=<?php echo $value["token"];?>" class="btn btn-primary">Cập nhật</a>
-				<a href="index.php?controller=blog/list" class="btn btn-success">Quay lại</a>
+				<a href="index.php?controller=blog/list" class="btn btn-success">hủy</a>
 			</div>
 		</div>
 	</div>

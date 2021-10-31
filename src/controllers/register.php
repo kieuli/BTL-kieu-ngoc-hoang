@@ -85,7 +85,7 @@
             $mail->Subject = $tieude;
             
             // Mail body content 
-            $bodyContent = '<p>Bạn đã đăng ký thành công</b></h1>'; 
+            $bodyContent = '<h1>chào mừng bạn đến với website cá nhân <p>Bạn đã đăng ký thành công</b></h1>'; 
             $bodyContent .= '<p> Để kích hoạt tài khoản bạn vui lòng click vào đường link bên dưới </p>';
             $bodyContent .= "<p><a href = 'http://localhost:81/BTL-kieu-ngoc-hoang/src/controllers/activate.php?varkey=$varkey'>Click here</a></p>"; 
             $mail->Body = $bodyContent;
