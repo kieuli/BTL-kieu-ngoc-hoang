@@ -13,6 +13,7 @@
 		<td width="50px;">STT</td>
 		<td width="200px;">Name</td>
 		<td>Email</td>
+		<td>Phân quyền</td>
 		<td width="100px;">Update</td>
 		<td width="100px;">delete</td>
 	</tr>
@@ -26,6 +27,15 @@
 		<td style="text-align: center;"><?php echo $stt; ?></td>
 		<td><?php echo $value["name"]; ?></td>
 		<td><?php echo $value["email"] ?></td>
+		<td>
+			<?php
+				if($value["permission"] == 1){
+					echo "Admin";
+				}if($value["permission"] == 0){
+					echo "Member";
+				}
+			?>
+		</td>
         <td><a class="text-danger" href="index.php?controller=users/edit&id=<?php echo $value["token"];?>"><i class="fas fa-trash"></i></a></td>
 		<td><a onclick="window.confirm('Bạn có chắc chăn muốn xóa ?');" href="index.php?controller=users/list&id=<?php echo $value["token"]; ?>&act=delete"><i class="fas fa-trash"></i></a></td>
 	</tr>

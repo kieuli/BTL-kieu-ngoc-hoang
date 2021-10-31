@@ -12,6 +12,8 @@
 					$email = $_POST["email"];
 					$password1 = $_POST["password1"];
 					$password2 = $_POST["password2"];
+					$permission = $_POST["permission"];
+					$activated	=	$_POST["activated"];
 
 					if ($password1 != $password2) {
 						header("location: index.php?controller=users/add&err=false ");
@@ -21,8 +23,8 @@
 						$token = new Token();
 						$strToken = $token->generate(10);
 
-						$this->Model->execute("insert into users(name,email,password,token) values('$username', '$email','$password','$strToken')");
-						header("location: ../../index.php?controller=users/list");
+						$this->Model->execute("insert into users(name,email,password,token,permission,activated) values('$username', '$email','$password','$strToken','$permission','$activated')");
+						
 					}
 
 					break;

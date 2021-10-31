@@ -1,6 +1,8 @@
 <?php
     
     session_start();
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+        
     $email      =       $_POST["email"];
     $password   =       $_POST["password"];
     
@@ -18,12 +20,19 @@
         $row=mysqli_fetch_assoc($result);
         $pass_hash = $row['password'];
         $activated = $row['activated'];
+		$permission = $row['permission'];
+		$name 		= $row['name'];
         if($activated ==1){
         
             if( md5($password) == $pass_hash ){
                 $_SESSION["account"] = $email;
-                $_SESSION["name"] = $check["name"];
-                header("location: ../../");
+                $_SESSION["name"] = $name;
+					if($permission == 1){
+						header("location: ../../admin/index.php");
+					}
+                    if($permission == 0){
+						header("../");
+					}
             
             }else{
                 echo "Kiểm tra lại Mật khẩu";
@@ -34,6 +43,7 @@
     }else{
         echo "Email không tồn tại";
     }
+}
 
 
 ?>
