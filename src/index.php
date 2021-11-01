@@ -198,7 +198,7 @@
                 </li>
               </ul>
             </li>
-            <li class="sidebar__menu-items">
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -222,8 +222,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -247,8 +247,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -272,8 +272,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -297,8 +297,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -322,8 +322,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -347,8 +347,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -372,8 +372,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -397,8 +397,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -422,8 +422,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -447,8 +447,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -472,8 +472,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -497,8 +497,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -522,7 +522,7 @@
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -581,6 +581,6 @@
       </div>
     </div>
   </div>
-  <script src="./Asset/active.js"></script>
+  <script src="../src/active.js"></script>
 </body>
 </html>
