@@ -167,7 +167,7 @@ body {
             <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
         </div>
     </form>
-	<div class="text-center">Already have an account? <a href="../views/login.php">Login here</a></div>
+	<div class="text-center">Already have an account? <a href="../login.php">Login here</a></div>
 </div>
 </body>
 </html>

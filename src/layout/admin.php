@@ -61,12 +61,6 @@
                     	<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
                         <li class="divider"></li>
                         <li>
                             <a href="../admin/index.php?act=logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
@@ -83,6 +77,10 @@
                     <li>
                         <a href="index.php?controller=users/list"><i class="fa fa-fw fa-bar-chart-o"></i> Quản lý users</a>
                     </li>
+                    <li>
+                        <a href="index.php?controller=users/template"><i class="fa fa-fw fa-bar-chart-o"></i> Quản lý template</a>
+                    </li>
+                    <li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-book"></i> Quản lý bài viết <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
