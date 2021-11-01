@@ -15,7 +15,11 @@
 		include "../layout/admin.php";
 	}
 	else {
+<<<<<<< HEAD
 		include "../index.php";
+=======
+		include "../login.php";
+>>>>>>> 4a308596d9faaa6102b57686735e3e4881f5057a
 	}
 
 ?>

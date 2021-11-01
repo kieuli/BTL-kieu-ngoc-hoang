@@ -1,8 +1,8 @@
 <?php
     
     session_start();
+
 	if($_SERVER["REQUEST_METHOD"] == "POST"){
-        
     $email      =       $_POST["email"];
     $password   =       $_POST["password"];
     
@@ -28,6 +28,7 @@
             if( md5($password) == $pass_hash ){
                 $_SESSION["account"] = $email;
                 $_SESSION["name"] = $name;
+<<<<<<< HEAD
 					if($permission == 1){
 						header("location: ../admin/index.php");
 					}
@@ -50,6 +51,29 @@
                     
                         
 					}
+=======
+
+				$_SESSION['id'] = $row['id'];
+                $_SESSION['level'] = $row['permission'];
+                $_SESSION['template'] = $row['templates'];
+
+                if($_SESSION['level'] == 1) {
+                    echo "<meta http-equiv='refresh' content='0;url=../admin/index.php'>";
+                } elseif($_SESSION['level'] == 0) 
+                {
+                    if($_SESSION['template'] == 0){
+                        echo "<meta http-equiv='refresh' content='0;url=../index.php'>";
+                    }elseif($_SESSION['template'] == 1){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template1/'>";
+                    }elseif($_SESSION['template'] == 2){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template2/'>";
+                    }elseif($_SESSION['template'] == 3){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template3/'>";
+                    }elseif($_SESSION['template'] == 4){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template4/'>";
+                    }
+                }
+>>>>>>> 4a308596d9faaa6102b57686735e3e4881f5057a
             
             }else{
                 echo "Kiểm tra lại Mật khẩu";

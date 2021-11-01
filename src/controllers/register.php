@@ -1,11 +1,8 @@
-<!-- Register.php nó gửi theo phương thức post > Toàn bộ dữ liệu tự động lưu $_POST -->
-<!-- $_POST là 1 MẢNG -->
-
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
-    
+
     require '../phpmailer/Exception.php';
     require '../phpmailer/PHPMailer.php';
     require '../phpmailer/SMTP.php';
@@ -28,15 +25,15 @@
 
 	include("../config/Config.php");
 
-   
-    
+
+
 
         // Bước 02: Xử lý truy vấn
     $sql_1 = "SELECT * FROM users WHERE email='$email'";
     $result_1 = mysqli_query($con,$sql_1);
     if(mysqli_num_rows($result_1) > 0){
         $value='failed';
-        header("Location:../views/register.php?reply=$value");
+        header("Location:../register.php?reply=$value");
     }else{
         $username = $con -> real_escape_string($username);
         $email = $con -> real_escape_string($email);
@@ -44,24 +41,16 @@
         $confirm_password = $con -> real_escape_string($confirm_password);
 
         $varkey = md5(time().$username);
-  
+        // Bước 02.2 - Chèn dữ liệu đăng kí vào BẢNG
         // Mật khẩu phải được BĂM
         $password_hash = md5($password);
-        if($_FILES["avata"]["name"]){
-            $image = "public/images/".time().$_FILES["avata"]["name"];
-            move_uploaded_file($_FILES["avata"]["tmp_name"], "../public/images/".time().$_FILES["avata"]["name"]);
-        }
-
-        $con = mysqli_connect("localhost","root","","btl") or die("Can not connect to MySQL");
-        mysqli_set_charset($con,"UTF8");
-
         // echo $pass_hash;
-        $sql_2="INSERT INTO users(name,avata , email,password,varkey) VALUES ('$username','$avata','$email','$password_hash','$varkey')";
+        $sql_2="INSERT INTO users(name, email,password,varkey) VALUES ('$username','$email','$password_hash','$varkey')";
         $result_2 = mysqli_query($con,$sql_2);  //Đối với lệnh INSERT, nếu CHÈN THÀNH CÔNG, nó trả về số NGUYÊN
 
         if($result_2>0){
             $value='successfully';
-            header("Location:../views/register.php?reply=$value");
+            header("Location:../register.php?reply=$value");
 
             $mail = new PHPMailer(true);
 
@@ -80,20 +69,20 @@
             $mail->setFrom('tronghoang19112001@gmail.com', 'Blogs');
 
             $mail->addReplyTo('tronghoang19112001@gmail.com', 'Blogs');
-            
+
             $mail->addAddress($email); // Add a recipient
-            
+
             // Attachments
             // $mail->addAttachment('pdf/XTT/'.$data[11].'.pdf', $data[11].'_1.pdf'); // Add attachments
-            
+
 
             // Content
             $mail->isHTML(true);   // Set email format to HTML
             $tieude = '[Thông báo] Xác minh tài khoản';
             $mail->Subject = $tieude;
-            
+
             // Mail body content 
-            $bodyContent = '<h1>chào mừng bạn đến với website cá nhân <p>Bạn đã đăng ký thành công</b></h1>'; 
+            $bodyContent = '<p>Bạn đã đăng ký thành công</b></h1>'; 
             $bodyContent .= '<p> Để kích hoạt tài khoản bạn vui lòng click vào đường link bên dưới </p>';
             $bodyContent .= "<p><a href = 'http://localhost:81/BTL-kieu-ngoc-hoang/src/controllers/activate.php?varkey=$varkey'>Click here</a></p>"; 
             $mail->Body = $bodyContent;
@@ -110,4 +99,4 @@
             }
     }
 
-    ?>
+    ?> 
