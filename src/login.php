@@ -68,6 +68,14 @@ html {
   font-size: 100%;
   height: 100%;
 }
+img{
+  display: inline-block;
+  width: 700px;
+  height: 100%;
+
+  margin-left: 150px;
+
+}
 
 body {
   background-color: #2c3338;
@@ -206,7 +214,11 @@ p {
 </head>
 <body class="align">
     <div class="login form">
-    <?php
+      <div class="logo_icon">
+      <img src = "../public/images/login.png" class = "w-25"  width:500px height: 100% alt = "logo HKN">
+        </div>
+      <h3 class = "display-4 fs-1 text-center">LOGIN</h3>
+       <?php 
                     if(isset($_GET['reply'])){
                         if($_GET['reply'] == 'successfully'){
                            echo "<p>Bạn đã kích hoạt tài khoản thành công</p>";
@@ -215,7 +227,7 @@ p {
                         }
                     }
                 ?>
-        <form action="../controllers//login.php" method="POST" >        
+        <form action="/controllers//login.php" method="POST" >        
             <div class="form__field">
                 <label for="login__username">
                 <svg class="icon">

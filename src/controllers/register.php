@@ -44,11 +44,19 @@
         $confirm_password = $con -> real_escape_string($confirm_password);
 
         $varkey = md5(time().$username);
-        // Bước 02.2 - Chèn dữ liệu đăng kí vào BẢNG
+  
         // Mật khẩu phải được BĂM
         $password_hash = md5($password);
+        if($_FILES["avata"]["name"]){
+            $image = "public/images/".time().$_FILES["avata"]["name"];
+            move_uploaded_file($_FILES["avata"]["tmp_name"], "../public/images/".time().$_FILES["avata"]["name"]);
+        }
+
+        $con = mysqli_connect("localhost","root","","btl") or die("Can not connect to MySQL");
+        mysqli_set_charset($con,"UTF8");
+
         // echo $pass_hash;
-        $sql_2="INSERT INTO users(name, email,password,varkey) VALUES ('$username','$email','$password_hash','$varkey')";
+        $sql_2="INSERT INTO users(name,avata , email,password,varkey) VALUES ('$username','$avata','$email','$password_hash','$varkey')";
         $result_2 = mysqli_query($con,$sql_2);  //Đối với lệnh INSERT, nếu CHÈN THÀNH CÔNG, nó trả về số NGUYÊN
 
         if($result_2>0){

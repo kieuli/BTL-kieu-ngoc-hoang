@@ -30,17 +30,7 @@
             <svg width="12px" height="6px" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
               <polygon fill="#1F303C" points="5 5.7 0 0.7 0.7 0 5 4.4 9.3 0 10 0.7 "></polygon>
           </svg>
-          <!-- <ul class="menu__child">
-            <li class="menu__child-items">
-              <a class="menu__child-items-link" href="">Gói cao cấp</a>
-            </li>
-            <li class="menu__child-items">
-              <a class="menu__child-items-link" href="">Miền</a>
-            </li>
-          </ul>
-          </li>
-          <li class="nav__menu-items">
-            <a class="nav__menu-items-link" href="">Mẫu</a> -->
+        
           </li>
           <li class="nav__menu-items">
             <a class="nav__menu-items-link" href="">Trợ giúp</a>
