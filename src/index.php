@@ -1,5 +1,8 @@
 <?php 
 		session_start();
+    if(!isset($_SESSION["name"]))
+
+	header("location:login.php"); 
 	?>
 <!DOCTYPE html>
 <html lang="en">
@@ -122,6 +125,7 @@
         </div>
         <a href="" class="user">
         <p class="text-end fst-italic "><?php echo $_SESSION['name']; ?></p>
+        <a href="controllers/logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
         </a>
       </div>
     </header>

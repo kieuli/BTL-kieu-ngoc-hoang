@@ -30,12 +30,23 @@
 
 				$_SESSION['id'] = $row['id'];
                 $_SESSION['level'] = $row['permission'];
+                $_SESSION['template'] = $row['templates'];
 
                 if($_SESSION['level'] == 1) {
                     echo "<meta http-equiv='refresh' content='0;url=../admin/index.php'>";
                 } elseif($_SESSION['level'] == 0) 
                 {
-                    echo "<meta http-equiv='refresh' content='0;url=../index.php'>";
+                    if($_SESSION['template'] == 0){
+                        echo "<meta http-equiv='refresh' content='0;url=../index.php'>";
+                    }elseif($_SESSION['template'] == 1){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template1/'>";
+                    }elseif($_SESSION['template'] == 2){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template2/'>";
+                    }elseif($_SESSION['template'] == 3){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template3/'>";
+                    }elseif($_SESSION['template'] == 4){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template4/'>";
+                    }
                 }
             
             }else{
