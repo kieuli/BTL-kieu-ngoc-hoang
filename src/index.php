@@ -1,3 +1,6 @@
+<?php 
+		session_start();
+	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,17 +33,7 @@
             <svg width="12px" height="6px" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
               <polygon fill="#1F303C" points="5 5.7 0 0.7 0.7 0 5 4.4 9.3 0 10 0.7 "></polygon>
           </svg>
-          <!-- <ul class="menu__child">
-            <li class="menu__child-items">
-              <a class="menu__child-items-link" href="">Gói cao cấp</a>
-            </li>
-            <li class="menu__child-items">
-              <a class="menu__child-items-link" href="">Miền</a>
-            </li>
-          </ul>
-          </li>
-          <li class="nav__menu-items">
-            <a class="nav__menu-items-link" href="">Mẫu</a> -->
+        
           </li>
           <li class="nav__menu-items">
             <a class="nav__menu-items-link" href="">Trợ giúp</a>
@@ -128,7 +121,7 @@
           </div>
         </div>
         <a href="" class="user">
-          USER
+        <p class="text-end fst-italic "><?php echo $_SESSION['name']; ?></p>
         </a>
       </div>
     </header>
@@ -208,7 +201,7 @@
                 </li>
               </ul>
             </li>
-            <li class="sidebar__menu-items">
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -232,8 +225,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -257,8 +250,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -282,8 +275,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -307,8 +300,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -332,8 +325,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -357,8 +350,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -382,8 +375,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -407,8 +400,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -432,8 +425,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -457,8 +450,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -482,8 +475,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -507,8 +500,8 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="sidebar__menu-items">
+            </li> -->
+            <!-- <li class="sidebar__menu-items">
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -532,7 +525,7 @@
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -591,6 +584,6 @@
       </div>
     </div>
   </div>
-  <script src="./Asset/active.js"></script>
+  <script src="../src/active.js"></script>
 </body>
 </html>

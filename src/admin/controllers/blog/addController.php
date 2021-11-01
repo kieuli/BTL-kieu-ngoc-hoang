@@ -15,7 +15,7 @@
 					$catalog = $_POST["catalog"];
 					$token = new Token();
 					$strToken = $token->generate(10);
-					$id = '';			
+					$id = '';	
 					if($_FILES["image"]["name"]){
 						$image = "public/images/".time().$_FILES["image"]["name"];
 						move_uploaded_file($_FILES["image"]["tmp_name"], "../public/images/".time().$_FILES["image"]["name"]);
@@ -28,7 +28,7 @@
 					// print_r($sql).die("Ok");
 					mysqli_query($con,$sql);
 
-					//$this->Model->execute("insert into menu_list_blog(avatar, name, metaTitle, catalog, description, content, token, dateTime) values('$image','$name', '$metaTitle', $catalog, '$description', '$content', '$strToken', '$dateTime')");
+					//$this->Model->execute("insert into menu_list_blog(avatar, name, metaTitle, catalog, description, content, token, dateTime) values('$image','$name', '$metaTitle', $catalog, '$description', '$content', '$strToken', '$dateTime','$id')");
 
 					echo "<meta http-equiv='refresh' content='0; URL=index.php?controller=blog/list'>";
 					break;

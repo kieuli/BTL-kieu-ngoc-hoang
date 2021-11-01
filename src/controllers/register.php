@@ -1,11 +1,8 @@
-<!-- Register.php nó gửi theo phương thức post > Toàn bộ dữ liệu tự động lưu $_POST -->
-<!-- $_POST là 1 MẢNG -->
-
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
-    
+
     require '../phpmailer/Exception.php';
     require '../phpmailer/PHPMailer.php';
     require '../phpmailer/SMTP.php';
@@ -28,15 +25,15 @@
 
 	include("../config/Config.php");
 
-   
-    
+
+
 
         // Bước 02: Xử lý truy vấn
     $sql_1 = "SELECT * FROM users WHERE email='$email'";
     $result_1 = mysqli_query($con,$sql_1);
     if(mysqli_num_rows($result_1) > 0){
         $value='failed';
-        header("Location:../views/register.php?reply=$value");
+        header("Location:../register.php?reply=$value");
     }else{
         $username = $con -> real_escape_string($username);
         $email = $con -> real_escape_string($email);
@@ -53,7 +50,7 @@
 
         if($result_2>0){
             $value='successfully';
-            header("Location:../views/register.php?reply=$value");
+            header("Location:../register.php?reply=$value");
 
             $mail = new PHPMailer(true);
 
@@ -72,18 +69,18 @@
             $mail->setFrom('tronghoang19112001@gmail.com', 'Blogs');
 
             $mail->addReplyTo('tronghoang19112001@gmail.com', 'Blogs');
-            
+
             $mail->addAddress($email); // Add a recipient
-            
+
             // Attachments
             // $mail->addAttachment('pdf/XTT/'.$data[11].'.pdf', $data[11].'_1.pdf'); // Add attachments
-            
+
 
             // Content
             $mail->isHTML(true);   // Set email format to HTML
             $tieude = '[Thông báo] Xác minh tài khoản';
             $mail->Subject = $tieude;
-            
+
             // Mail body content 
             $bodyContent = '<p>Bạn đã đăng ký thành công</b></h1>'; 
             $bodyContent .= '<p> Để kích hoạt tài khoản bạn vui lòng click vào đường link bên dưới </p>';
@@ -102,4 +99,4 @@
             }
     }
 
-    ?>
+    ?> 

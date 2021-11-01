@@ -27,11 +27,16 @@
             if( md5($password) == $pass_hash ){
                 $_SESSION["account"] = $email;
                 $_SESSION["name"] = $name;
-					if($permission == 1){
-						header("location: ../admin/index.php");
-					}if($permission == 0){
-						header("location :../index.php");
-					}
+
+				$_SESSION['id'] = $row['id'];
+                $_SESSION['level'] = $row['permission'];
+
+                if($_SESSION['level'] == 1) {
+                    echo "<meta http-equiv='refresh' content='0;url=../admin/index.php'>";
+                } elseif($_SESSION['level'] == 0) 
+                {
+                    echo "<meta http-equiv='refresh' content='0;url=../index.php'>";
+                }
             
             }else{
                 echo "Kiểm tra lại Mật khẩu";

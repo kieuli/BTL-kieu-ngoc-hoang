@@ -100,9 +100,9 @@ body {
 }
 </style>
 </head>
-<body>
+<body>	
 <div class="signup-form">
-    <form action="../controllers/register.php" method="POST">   
+    <form action="controllers/register.php" method="POST">   
 		<h2>Sign Up</h2>
 		<p>Please fill in this form to create an account!</p>
 		<hr>
@@ -156,6 +156,10 @@ body {
 				<input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
 			</div>
         </div>
+		<div class="form-group">
+			<label class="form-lable" name="avata"> Profile Picture </lable>
+				<input type="file" class="form-control">
+        </div>
         <div class="form-group">
 			<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
 		</div>
@@ -163,7 +167,7 @@ body {
             <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
         </div>
     </form>
-	<div class="text-center">Already have an account? <a href="../views/login.php">Login here</a></div>
+	<div class="text-center">Already have an account? <a href="login.php">Login here</a></div>
 </div>
 </body>
 </html>

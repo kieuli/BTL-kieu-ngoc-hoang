@@ -6,10 +6,10 @@ if(isset($_GET['varkey'])){
     
     $resultSet = $con ->query("SELECT activated,varkey FROM users WHERE activated = 0 AND varkey = '$varkey' ");
     if($resultSet -> num_rows == 1){
-        $updates = $con->query("UPDATE users SET activated =1  WHERE varkey = '$varkey'");
+        $updates = $con->query("UPDATE users SET activated = 1  WHERE varkey = '$varkey'");
         if($updates){
             $value='successfully';
-            header("Location:../views/login.php?reply=$value");
+            header("Location:../login.php?reply=$value");
         }else{
             echo "Kích hoạt thất bại";
         }

@@ -15,7 +15,7 @@
 		include "../layout/admin.php";
 	}
 	else {
-		include "../views/login.php";
+		include "../login.php";
 	}
 
 ?>
