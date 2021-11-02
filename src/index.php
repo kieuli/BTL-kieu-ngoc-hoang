@@ -95,21 +95,21 @@
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="templates/template2">
+                <a href="">
                   <div class="content">
                     <img src="../src/img/Untitled.png" alt="template2">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="templates/template3">
+                <a href="">
                   <div class="content">
                     <img src="../src/img/Untitled.png" alt="template3">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="templates/template4">
+                <a href="templates/template">
                   <div class="content">
                     <img src="../src/img/Untitled.png" alt="template4">
                   </div>
