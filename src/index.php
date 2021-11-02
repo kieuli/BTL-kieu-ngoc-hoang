@@ -1,6 +1,7 @@
 <?php 
 		session_start();
-    if(!isset($_SESSION["id"]))
+    if(!isset($_SESSION["name"]))
+
 	header("location:login.php"); 
 	?>
 <!DOCTYPE html>
@@ -13,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <title>Blog cá nhân</title>
+  <title>Blog cá nhân H-K-N</title>
   <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
@@ -24,9 +25,6 @@
           <img src="img/HKN.jpg" alt="">
         </a>
         <ul class="nav__menu">
-          <li class="nav__menu-items">
-            <a class="nav__menu-items-link" href="">Trang chủ</a>
-          </li>
           <li class="nav__menu-items">
             <a class="nav__menu-items-link" href="">Bài viết </a>
           </li>
@@ -41,84 +39,11 @@
             <a class="nav__menu-items-link" href="">Trợ giúp</a>
           </li>
         </ul>
-        <div class="user">
-          <div class="content__language">
-            <ul class="menu__child menu__child2">
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  lo
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-              <li class="menu__child-items">
-                <a class="menu__child-items-link" href="">
-                  English
-                </a>
-              </li>
-            </ul>
-          </div>
-         
-        </div>
         
+        <a href="" class="user">
+            <p class="text-end fst-italic "><?php echo $_SESSION['name']; ?></p>
+            <a href="controllers/logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+            </a>
       </div>
     </header>
     <div id="root">
@@ -130,397 +55,19 @@
               <input class="input__search" type="text" placeholder="Tìm kiếm ">
             </div>
           </form>
-          <div class="bar__title">Xem theo</div>
+          <div class="bar__title">MỚI!</div>
           <ul class="sidebar__menu">
             <li class="sidebar__menu-items">
-              <a class="sidebar__menu-items-link" href=""><span>MỚI!</span></a>
+              <a class="sidebar__menu-items-link" href=""><span>mẫu xanh lá</span></a>
             </li>
             <li class="sidebar__menu-items">
-              <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
+              <a class="sidebar__menu-items-link" href=""><span>mẫu cam </span></a>
             </li>
             <li class="sidebar__menu-items">
-              <a class="sidebar__menu-items-link" href=""><span>Mẫu màu xanh </span></a>
-            </li>
-          </ul>
-          <div class="bar__title md">Danh mục</div>
-          <ul class="sidebar__menu">
-            <li class="sidebar__menu-items">
-              <a class="sidebar__menu-items-link" href=""><span>Xem tất cả mẫu</span></a>
+              <a class="sidebar__menu-items-link" href=""><span>Mẫu xanh lục </span></a>
             </li>
             <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Mẫu màu cam </span></a>
-              </div>
-              <!-- <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul> -->
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg class="icon__active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild bar__menuChild-active">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Mẫu nền xanh lá </span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Mẫu nền màu tím </span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Mẫu nền xanh dương </span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="sidebar__menu-items">
-              <div class="items__title">
-                <label>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
-                </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
-              </div>
-              <ul class="bar__menuChild">
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-                <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Tư vấn và huấn luyện</span>
-                  </a>
-                </li>
-              </ul>
+              <a class="sidebar__menu-items-link" href=""><span>Mẫu đỏ  </span></a>
             </li>
           </ul>
         </nav>
@@ -532,45 +79,45 @@
               mà bạn yêu thích</h1>
             <div class="row">
               <div class="col l-4 c-4 m-1">
-                <a href="">
+                <a href="templates/template1">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="">
+                    <img src="../src/img/Untitled.png" alt="template1">
                     
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="">
+                <a href="templates/template2">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="">
+                    <img src="../src/img/Untitled.png" alt="template2">
+                  </div>
+                </a>
+              </div>
+              <div class="col l-4 c-4 m-1">
+                <a href="templates/template3">
+                  <div class="content">
+                    <img src="../src/img/Untitled.png" alt="template3">
+                  </div>
+                </a>
+              </div>
+              <div class="col l-4 c-4 m-1">
+                <a href="templates/template4">
+                  <div class="content">
+                    <img src="../src/img/Untitled.png" alt="template4">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
                 <a href="">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="">
+                    <img src="../src/img/Untitled.png" alt="template5">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
                 <a href="">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="col l-4 c-4 m-1">
-                <a href="">
-                  <div class="content">
-                    <img src="../src/img/Untitled.png" alt="">
-                  </div>
-                </a>
-              </div>
-              <div class="col l-4 c-4 m-1">
-                <a href="">
-                  <div class="content">
-                    <img src="../src/img/Untitled.png" alt="">
+                    <img src="../src/img/Untitled.png" alt="template6">
                   </div>
                 </a>
               </div>

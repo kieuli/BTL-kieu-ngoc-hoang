@@ -23,8 +23,7 @@
 						$token = new Token();
 						$strToken = $token->generate(10);
 
-						$this->Model->execute("insert into users(name,email,password,token) values('$username', '$email','$password','$strToken')");
-							header("location: ../../index.php?controller=users/list ");
+						$this->Model->execute("insert into users(name,email,password,token,permission,activated) values('$username', '$email','$password','$strToken','$permission','$activated')");
 					}
 
 					break;
