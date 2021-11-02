@@ -33,19 +33,19 @@
 					}
                     if($permission == 0){
                         if($templates == 0){
-                            header("../home.php");
+                            header("../index.php");
                         }
                         else if($templates == 1){
-                            header("../template/template1.php");
+                            header("../templates/template1");
                             }
                         else if($templates == 2){
-                             header("../template/template2.php");
+                             header("../templates/template2");
                         }
                         else if($templates == 3){
-                            header("../template/template3.php");
+                            header("../templates/template3");
                         }
-                        else if($templates == 4){
-                            header("../template/template3.php");
+                        else{
+                            header("../templates/template4");
                             }
                     
                         

@@ -43,7 +43,7 @@
                     <div class="top-menu-are">
                         <div id="navigation-wrapper">
                             <ul class="top-menu text-center">
-                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="../index.html">Trang chủ</a></li>
                                 <li><a href="contact.html">Bài viết</a></li>
                             </ul>                   
                         </div>
@@ -56,7 +56,7 @@
     <!--/header end-->
 	
 	<div class="main-logo text-center">
-		<a href="index.php"><img src="public/client/images/logo.png" alt="Rosy"></a>
+		<a href="../index.php"><img src="public/client/images/logo.png" alt="Rosy"></a>
 	</div>
 
 	<!--blog start-->
