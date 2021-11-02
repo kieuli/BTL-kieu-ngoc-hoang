@@ -25,10 +25,9 @@
 					<legend>Nội dung chính</legend>
 					<?php echo $value["content"] ?>
 				</fieldset>
-				<!-- btn -->
-				<a href="index.php?controller=blog/edit&id=<?php echo $value["token"];?>" class="btn btn-primary">Cập nhật</a>
-				<a href="index.php?controller=blog/list" class="btn btn-success">hủy</a>
+				<a href="index.php?controller=blog/list" class="btn btn-success">Quay lại</a>
 			</div>
 		</div>
 	</div>
 </div>
+

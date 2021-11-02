@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <title>Blog cá nhân H-K-N</title>
+  <title>Blog cá nhân</title>
   <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
@@ -25,6 +25,9 @@
           <img src="img/HKN.jpg" alt="">
         </a>
         <ul class="nav__menu">
+          <li class="nav__menu-items">
+            <a class="nav__menu-items-link" href="">Trang chủ</a>
+          </li>
           <li class="nav__menu-items">
             <a class="nav__menu-items-link" href="">Bài viết </a>
           </li>
@@ -39,7 +42,7 @@
             <a class="nav__menu-items-link" href="">Trợ giúp</a>
           </li>
         </ul>
-        
+
         <a href="" class="user">
             <p class="text-end fst-italic "><?php echo $_SESSION['name']; ?></p>
             <a href="controllers/logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
@@ -55,19 +58,24 @@
               <input class="input__search" type="text" placeholder="Tìm kiếm ">
             </div>
           </form>
-          <div class="bar__title">MỚI!</div>
           <ul class="sidebar__menu">
+            <li class="sidebar__menu-items">
+              <a class="sidebar__menu-items-link" href=""><span>MỚI!</span></a>
+            </li>
             <li class="sidebar__menu-items">
               <a class="sidebar__menu-items-link" href=""><span>mẫu xanh lá</span></a>
             </li>
             <li class="sidebar__menu-items">
-              <a class="sidebar__menu-items-link" href=""><span>mẫu cam </span></a>
+              <a class="sidebar__menu-items-link" href=""><span>Mẫu màu xanh lam </span></a>
             </li>
             <li class="sidebar__menu-items">
-              <a class="sidebar__menu-items-link" href=""><span>Mẫu xanh lục </span></a>
+              <a class="sidebar__menu-items-link" href=""><span>mẫu cam</span></a>
             </li>
             <li class="sidebar__menu-items">
-              <a class="sidebar__menu-items-link" href=""><span>Mẫu đỏ  </span></a>
+              <a class="sidebar__menu-items-link" href=""><span>mẫu đỏ</span></a>
+            </li>
+            <li class="sidebar__menu-items">
+              <a class="sidebar__menu-items-link" href=""><span>Mẫu hồng </span></a>
             </li>
           </ul>
         </nav>
@@ -79,45 +87,45 @@
               mà bạn yêu thích</h1>
             <div class="row">
               <div class="col l-4 c-4 m-1">
-                <a href="templates/template1">
+                <a href="">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="template1">
+                    <img src="../src/img/Untitled.png" alt="">
                     
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="templates/template2">
+                <a href="">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="template2">
-                  </div>
-                </a>
-              </div>
-              <div class="col l-4 c-4 m-1">
-                <a href="templates/template3">
-                  <div class="content">
-                    <img src="../src/img/Untitled.png" alt="template3">
-                  </div>
-                </a>
-              </div>
-              <div class="col l-4 c-4 m-1">
-                <a href="templates/template4">
-                  <div class="content">
-                    <img src="../src/img/Untitled.png" alt="template4">
+                    <img src="../src/img/Untitled.png" alt="">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
                 <a href="">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="template5">
+                    <img src="../src/img/Untitled.png" alt="">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
                 <a href="">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="template6">
+                    <img src="../src/img/Untitled.png" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="col l-4 c-4 m-1">
+                <a href="">
+                  <div class="content">
+                    <img src="../src/img/Untitled.png" alt="">
+                  </div>
+                </a>
+              </div>
+              <div class="col l-4 c-4 m-1">
+                <a href="">
+                  <div class="content">
+                    <img src="../src/img/Untitled.png" alt="">
                   </div>
                 </a>
               </div>
