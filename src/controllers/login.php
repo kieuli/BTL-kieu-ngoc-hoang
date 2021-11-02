@@ -28,28 +28,26 @@
             if( md5($password) == $pass_hash ){
                 $_SESSION["account"] = $email;
                 $_SESSION["name"] = $name;
-					if($permission == 1){
-						header("location: ../admin/index.php");
-					}
-                    if($permission == 0){
-                        if($templates == 0){
-                            header("../index.php");
-                        }
-                        else if($templates == 1){
-                            header("../templates/template1");
-                            }
-                        else if($templates == 2){
-                             header("../templates/template2");
-                        }
-                        else if($templates == 3){
-                            header("../templates/template3");
-                        }
-                        else{
-                            header("../templates/template4");
-                            }
-                    
-                        
-					}
+				$_SESSION['id'] = $row['id'];
+                $_SESSION['level'] = $row['permission'];
+                $_SESSION['template'] = $row['templates'];
+
+                if($_SESSION['level'] == 1) {
+                    echo "<meta http-equiv='refresh' content='0;url=../admin/index.php'>";
+                } elseif($_SESSION['level'] == 0) 
+                {
+                    if($_SESSION['template'] == 0){
+                        echo "<meta http-equiv='refresh' content='0;url=../index.php'>";
+                    }elseif($_SESSION['template'] == 1){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template1/'>";
+                    }elseif($_SESSION['template'] == 2){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template2/'>";
+                    }elseif($_SESSION['template'] == 3){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template3/'>";
+                    }elseif($_SESSION['template'] == 4){
+                        echo "<meta http-equiv='refresh' content='0;url=../templates/template4/'>";
+                    }
+                }
             
             }else{
                 echo "Kiểm tra lại Mật khẩu";
