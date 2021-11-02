@@ -84,7 +84,7 @@
             // Mail body content 
             $bodyContent = '<p>Bạn đã đăng ký thành công</b></h1>'; 
             $bodyContent .= '<p> Để kích hoạt tài khoản bạn vui lòng click vào đường link bên dưới </p>';
-            $bodyContent .= "<p><a href = 'http://localhost:81/BTL-kieu-ngoc-hoang/src/controllers/activate.php?varkey=$varkey'>Click here</a></p>"; 
+            $bodyContent .= "<p><a href = 'http://localhost:80/BTL-kieu-ngoc-hoang/src/controllers/activate.php?varkey=$varkey'>Click here</a></p>"; 
             $mail->Body = $bodyContent;
             // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
             if($mail->send()){

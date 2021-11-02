@@ -9,7 +9,6 @@
 				case 'delete':
 					$id = isset($_GET["id"])?$_GET["id"]:0;
 					$this->Model->execute("delete from users where token='$id'");
-					header("location: index.php?controller=users/list");
 					break;
 			}
 
