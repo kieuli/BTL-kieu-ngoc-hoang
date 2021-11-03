@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Admin</a>
+                <a class="navbar-brand" href="index.php">Admin</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -63,7 +63,7 @@
                     <ul class="dropdown-menu">
                         <li class="divider"></li>
                         <li>
-                            <a href="../index.php?act=logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="../login.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>

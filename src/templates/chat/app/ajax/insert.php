@@ -9,13 +9,13 @@ if (isset($_SESSION['name'])) {
         isset($_POST['to_id'])) {
 	
 	# database connection file
-	include "../config/Config.php";
-	
+	include '../../../../config/Config.php';
+
 	# get data from XHR request and store them in var
 	$message = $_POST['message'];
 	$to_id = $_POST['to_id'];
 
-	# get the logged in user's name from the SESSION
+	# get the logged in user's email from the SESSION
 	$from_id = $_SESSION['id'];
 
 	$sql = "INSERT INTO 
@@ -26,18 +26,13 @@ if (isset($_SESSION['name'])) {
     
     # if the message inserted
     if ($res) {
-    	/**
-       check if this is the first
-       conversation between them
-       **/
+    
        $sql2 = "SELECT * FROM conversations
                WHERE (user_1=? AND user_2=?)
                OR    (user_2=? AND user_1=?)";
        $stmt2 = $conn->prepare($sql2);
 	   $stmt2->execute([$from_id, $to_id, $from_id, $to_id]);
 
-	    // setting up the time Zone
-		// It Depends on your location or your P.c settings
 		define('TIMEZONE', 'Africa/Addis_Ababa');
 		date_default_timezone_set(TIMEZONE);
 

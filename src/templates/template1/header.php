@@ -12,7 +12,7 @@
 				    <img class="profile-image mb-3 rounded-circle mx-auto" src="../assets/images/avt.png" alt="image" >			
 					
 				
-                    <a href="#" class="btn btn block"><i class="fab fa-facebook-messenger"></i> Inbox</a>
+                    <a href="../chat" class="btn btn block"><i class="fab fa-facebook-messenger"></i> Inbox</a>
 					<ul class="social-list list-inline py-3 mx-auto">
 			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
 			            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>

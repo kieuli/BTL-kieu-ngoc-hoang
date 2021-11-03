@@ -8,21 +8,7 @@ if (isset($_SESSION['name'])) {
 	if (isset($_POST['id_2'])) {
 	
 	# database connection file
-	include "../config/Config.php";
-	
-
-	if(isset($_GET["act"]) && $_GET["act"]=="logout")
-		unset($_SESSION["account"]);
-// kiểm tra đã tồn tại hay chưa
-	if(isset($_SESSION['account'])) {
-		$controller = isset($_GET["controller"])?"controllers/".$_GET["controller"]."Controller.php":"controllers/home.php";
-		include "../layout/admin.php";
-	}
-	else {
-		include "../index.php";
-	}
-
-?>
+	include '../../../../config/Config.php';
 
 	$id_1  = $_SESSION['id'];
 	$id_2  = $_POST['id_2'];

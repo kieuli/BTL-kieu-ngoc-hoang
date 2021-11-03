@@ -6,10 +6,9 @@ session_start();
 if (isset($_SESSION['name'])) {
 	
 	# database connection file
-	include "../config/Config.php";
-	
+	include '../../../../config/Config.php';
 
-	# get the logged in user's name from SESSION
+	# get the logged in user's email from SESSION
 	$id = $_SESSION['id'];
 
 	$sql = "UPDATE users

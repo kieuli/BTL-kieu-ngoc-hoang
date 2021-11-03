@@ -7,14 +7,13 @@ if (isset($_SESSION['name'])) {
     # check if the key is submitted
     if(isset($_POST['key'])){
        # database connection file
-	   include "../config/Config.php";
-	
+	   include '../../../../config/Config.php';
 
 	   # creating simple search algorithm :) 
 	   $key = "%{$_POST['key']}%";
      
 	   $sql = "SELECT * FROM users
-	           WHERE name
+	           WHERE email
 	           LIKE ? OR name LIKE ?";
        $stmt = $conn->prepare($sql);
        $stmt->execute([$key, $key]);
@@ -33,7 +32,7 @@ if (isset($_SESSION['name'])) {
 			<div class="d-flex
 			            align-items-center">
 
-			    <img src="uploads/<?=$user['p_p']?>"
+			    <img src="uploads/<?=$user['avata']?>"
 			         class="w-10 rounded-circle">
 
 			    <h3 class="fs-xs m-2">

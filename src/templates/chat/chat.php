@@ -1,23 +1,20 @@
-<?php
+<?php 
+  session_start();
 
-	session_start();
-	include "../config/Config.php";
-	include "../config/Model.php";
-	include "../config/Controller.php";
-	include "../config/RemoveUnicode.php";
-	include "../config/Token.php";
+  if (isset($_SESSION['name'])) {
+  	# database connection file
+	  include '../../config/Config.php';
 
-	if(isset($_GET["act"]) && $_GET["act"]=="logout")
-		unset($_SESSION["account"]);
-// kiểm tra đã tồn tại hay chưa
-	if(isset($_SESSION['account'])) {
-		$controller = isset($_GET["controller"])?"controllers/".$_GET["controller"]."Controller.php":"controllers/home.php";
-		include "../layout/admin.php";
-	}
-	else {
-		include "../index.php";
-	}
+  	include 'app/helpers/user.php';
+  	include 'app/helpers/chat.php';
+  	include 'app/helpers/opened.php';
 
+  	include 'app/helpers/timeAgo.php';
+
+  	if (!isset($_GET['user'])) {
+  		header("Location: home.php");
+  		exit;
+  	}
 
   	# Getting User data data
   	$chatWith = getUser($_GET['user'], $conn);
@@ -36,17 +33,32 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Chat App</title>
+	<title>Chat box</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<link rel="stylesheet" 
 	      href="css/style.css">
-	<link rel="icon" href="img/logo.png">
+	<link rel="icon" href="img/mes.jpg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="d-flex
-             justify-content-center
-             align-items-center
-             vh-100">
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+     <img src="../../img/HKN.jpg" alt="index.php">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+            <a class="nav__menu-items-link" href="../../index.php">Trang chủ</a>
+            <a class="nav__menu-items-link" href="../../post.php">giới thiệu </a>
+            <a class="nav__menu-items-link" href="contact.php">Trợ giúp</a>
+      </div>
+    </div>
+    <a href="" class="user">        
+            <a href="../../controllers/logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+            </a>
+  </div>
+</nav>
     <div class="w-400 shadow p-4 rounded">
     	<a href="home.php"
     	   class="fs-4 link-dark">&#8592;</a>
@@ -191,7 +203,7 @@
  </html>
 <?php
   }else{
-  	header("Location: ../index.php");
+  	header("Location: ../../index.php");
    	exit;
   }
  ?>

@@ -1,10 +1,10 @@
 <?php  
 
-function getUser($name, $conn){
+function getUser($email, $conn){
    $sql = "SELECT * FROM users 
-           WHERE name=?";
+           WHERE name =?";
    $stmt = $conn->prepare($sql);
-   $stmt->execute([$name]);
+   $stmt->execute([$email]);
 
    if ($stmt->rowCount() === 1) {
    	 $user = $stmt->fetch();

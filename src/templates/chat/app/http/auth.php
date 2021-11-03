@@ -1,25 +1,25 @@
 <?php  
 session_start();
 
-# check if name & password  submitted
+# check if email & password  submitted
 if(isset($_POST['email']) &&
    isset($_POST['password'])){
 
    # database connection file
-   include '../db.conn.php';
+   include '../../../../config/Config.php';
    
    # get data from POST request and store them in var
    $password = $_POST['password'];
-   $name = $_POST['email'];
+   $email = $_POST['email'];
    
    #simple form Validation
-   if(empty($name)){
+   if(empty($email)){
       # error message
-      $em = "name is required";
+      $em = "email is required";
 
       # redirect to 'index.php' and passing error message
       header("Location: ../../index.php?error=$em");
-   }else if(($password)){
+   }else if(empty($password)){
       # error message
       $em = "Password is required";
 
@@ -29,15 +29,15 @@ if(isset($_POST['email']) &&
       $sql  = "SELECT * FROM 
                users WHERE email=?";
       $stmt = $conn->prepare($sql);
-      $stmt->execute([$name]);
+      $stmt->execute([$email]);
 
-      # if the name is exist
+      # if the email is exist
       if($stmt->rowCount() === 1){
         # fetching user data
         $user = $stmt->fetch();
 
-        # if both name's are strictly equal
-        if ($user['name'] === $name) {
+        # if both email's are strictly equal
+        if ($user['email'] === $email) {
            
            # verifying the encrypted password
           if (md5($password, $user['password'])) {
@@ -53,14 +53,14 @@ if(isset($_POST['email']) &&
 
           }else {
             # error message
-            $em = "Incorect name or password";
+            $em = "Incorect email or password";
 
             # redirect to 'index.php' and passing error message
             header("Location: ../../index.php?error=$em");
           }
         }else {
           # error message
-          $em = "Incorect name or password";
+          $em = "Incorect email or password";
 
           # redirect to 'index.php' and passing error message
           header("Location: ../../index.php?error=$em");
