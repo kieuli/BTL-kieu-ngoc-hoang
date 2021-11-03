@@ -61,8 +61,6 @@
     			         class="w-25 rounded-circle">
                     <h3 class="fs-xs m-2"><?=$user['name']?></h3> 
     			</div>
-    			<a href="../../controllers/logout.php"
-    			   class="btn btn-dark">Logout</a>
     		</div>
 
     		<div class="input-group mb-3">
@@ -137,7 +135,7 @@
          	   });
        });
 
-       // Search using the button
+
        $("#serachBtn").on("click", function(){
        	 var searchText = $("#searchText").val();
          if(searchText == "") return;
@@ -151,10 +149,7 @@
        });
 
 
-      /** 
-      auto update last seen 
-      for logged in user
-      **/
+     
       let lastSeenUpdate = function(){
       	$.get("app/ajax/update_last_seen.php");
       }

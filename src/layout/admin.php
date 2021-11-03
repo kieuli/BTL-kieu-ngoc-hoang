@@ -78,7 +78,7 @@
                         <a href="index.php?controller=users/list"><i class="fa fa-fw fa-bar-chart-o"></i> Quản lý users</a>
                     </li>
                     <li>
-                        <a href="index.php?controller=users/template"><i class="fa fa-fw fa-bar-chart-o"></i> Quản lý template</a>
+                        <a href="index.php?controller=template/list"><i class="fa fa-fw fa-bar-chart-o"></i> Quản lý template</a>
                     </li>
                     <li>
                     <li>

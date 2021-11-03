@@ -1,14 +1,13 @@
-<?php 
+<?php
 
-	class addUsers extends Controller{
+	class ListUsers extends Controller{
 		public function __construct(){
 			parent::__construct();
 
 			$act = isset($_GET["act"])?$_GET["act"]:"";
-
-			include "views/template.php";
+			include "views/template/listView.php";
 		}
 	}
-	new addUsers();
+	new ListUsers();
 
- ?>
+?>

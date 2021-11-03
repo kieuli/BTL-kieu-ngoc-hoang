@@ -38,7 +38,6 @@
 		<td><?php echo $value["dateTime"] ?></td>
 		<td>
 			<a href="index.php?controller=blog/detail&id=<?php echo $value["token"] ?>">View</a>
-			<a href="index.php?controller=blog/edit&id=<?php echo $value["token"] ?>">Update</a>
 			<a href="index.php?controller=blog/list&act=delete&id=<?php echo $value['token'] ?>">Delete</a>
 		</td>
 	</tr>
