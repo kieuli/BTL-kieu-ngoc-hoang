@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  
   <title>Blog cá nhân</title>
   <link rel="stylesheet" href="../src/style.css">
 </head>
@@ -42,13 +43,12 @@
             <a class="nav__menu-items-link" href="">Trợ giúp</a>
           </li>
         </ul>
-<<<<<<< HEAD
-        <div class="user">
+        <!-- <div class="user">
           <div class="content__language">
             <ul class="menu__child menu__child2">
               <li class="menu__child-items">
                 <a class="menu__child-items-link" href="">
-                  lo
+                  English
                 </a>
               </li>
               <li class="menu__child-items">
@@ -118,17 +118,13 @@
               </li>
             </ul>
           </div>
-        </div>
-        <a href="" class="user">
-            <p class="text-end fst-italic "><?php echo $_SESSION['name']; ?></p>
-            <a href="controllers/logout.php"><i class="text-end fst-italic" ></i> Log Out</a>
-=======
-
+        </div> -->
+          
         <a href="" class="user">
             <p class="text-end fst-italic "><?php echo $_SESSION['name']; ?></p>
             <a href="controllers/logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
->>>>>>> origin
-            </a>
+            
+        </a>
       </div>
     </header>
     <div id="root">
@@ -145,7 +141,6 @@
               <a class="sidebar__menu-items-link" href=""><span>MỚI!</span></a>
             </li>
             <li class="sidebar__menu-items">
-<<<<<<< HEAD
               <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
             </li>
             <li class="sidebar__menu-items">
@@ -203,6 +198,16 @@
                 <li class="bar__menuChild-item">
                   <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
                     <span>Mẫu nền xanh dương </span>
+                  </a>
+                </li>
+                <li class="bar__menuChild-item">
+                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
+                    <span>Mẫu nền pink </span>
+                  </a>
+                </li>
+                <li class="bar__menuChild-item">
+                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
+                    <span>Mẫu nền drank  </span>
                   </a>
                 </li>
               </ul>
@@ -381,9 +386,8 @@
                   </a>
                 </li>
               </ul>
-=======
+
               <a class="sidebar__menu-items-link" href=""><span>mẫu xanh lá</span></a>
->>>>>>> origin
             </li>
             <li class="sidebar__menu-items">
               <a class="sidebar__menu-items-link" href=""><span>Mẫu màu xanh lam </span></a>
@@ -395,7 +399,7 @@
               <a class="sidebar__menu-items-link" href=""><span>mẫu đỏ</span></a>
             </li>
             <li class="sidebar__menu-items">
-<<<<<<< HEAD
+
               <div class="items__title">
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
@@ -470,10 +474,7 @@
                 </li>
               </ul>
             </li> -->
-=======
-              <a class="sidebar__menu-items-link" href=""><span>Mẫu hồng </span></a>
-            </li>
->>>>>>> origin
+
           </ul>
         </nav>
       </div>
@@ -486,7 +487,7 @@
               <div class="col l-4 c-4 m-1">
                 <a href="">
                   <div class="content">
-                    <img src="../src/img/template_green.png" width="300px" height="250px" alt="">
+                    <img src="../src/img/template_green.png" width="330px" height="250px" alt="">
                     
                   </div>
                 </a>
@@ -494,21 +495,21 @@
               <div class="col l-4 c-4 m-1">
                 <a href="">
                   <div class="content">
-                    <img src="../src/img/template_orange.png" width="300px" height="250px" alt="">
+                    <img src="../src/img/template_orange.png" width="330px" height="250px" alt="">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
                 <a href="">
                   <div class="content">
-                    <img src="../src/img/template_purple.png" width="300px" height="250px alt="">
+                    <img src="../src/img/template_purple.png" width="330px" height="250px" alt="">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
                 <a href="">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="">
+                    <img src="../src/img/template_blue.png" width="330px" height="250px" alt="">
                   </div>
                 </a>
               </div>
@@ -532,6 +533,6 @@
       </div>
     </div>
   </div>
-  <script src="./Asset/active.js"></script>
+  <script src="active.js"></script>
 </body>
 </html>
