@@ -18,7 +18,7 @@
 	<script defer src="../assets/fontawesome/js/all.min.js"></script>
     
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="../assets/css/theme-3.css">
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme-6.css">
 
 </head>
 

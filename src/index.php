@@ -121,9 +121,9 @@
           </div>
         </div> -->
           
-        <a href="" class="user">
+        <a href=" " class="user">
             <p class="text-end fst-italic "><?php echo $_SESSION['name']; ?></p>
-            <a href="controllers/logout.php"><i class="fa fa-fw fa-power-off"></i>Logout</a>
+            <a  href="controllers/logout.php"><i class="fa fa-fw fa-power-off "></i>Logout</a>
             
         </a>
 
@@ -493,8 +493,8 @@
               <div class="col l-4 c-4 m-1">
                 <a href="templates/template1">
                   <div class="content">
-
-                    <img src="../src/img/template_green.png" width="330px" height="250px" alt="">
+                    <img src="../src/img/template_green.png" width="330px" height="250px"  alt="">
+                    
                   </div>
                 </a>
               </div>
