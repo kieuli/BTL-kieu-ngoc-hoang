@@ -205,12 +205,12 @@
                 </li>
                 <li class="bar__menuChild-item">
                   <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Mẫu nền pink </span>
+                    <span>Blog cá nhân cho bạn</span>
                   </a>
                 </li>
                 <li class="bar__menuChild-item">
                   <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
-                    <span>Mẫu nền drank  </span>
+                    <span> Mẫu tối giản   </span>
                   </a>
                 </li>
               </ul>
@@ -499,7 +499,7 @@
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="">
+                <a href="templates/template2">
                   <div class="content">
 
                     <img src="../src/img/template_orange.png" width="330px" height="250px" alt="">
@@ -507,30 +507,30 @@
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="">
+                <a href="templates/template3">
                   <div class="content">
                      <img src="../src/img/template_purple.png" width="330px" height="250px" alt="">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="templates/template">
+                <a href="templates/template4">
                   <div class="content">
                     <img src="../src/img/template_blue.png" width="330px" height="250px" alt="">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="">
+                <a href="templates/template5">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="template5">
+                    <img src="../src/img/template_xanhlacay.png" width="330px" height="250px" alt="template5">
                   </div>
                 </a>
               </div>
               <div class="col l-4 c-4 m-1">
-                <a href="templates/template1">
+                <a href="templates/template6">
                   <div class="content">
-                    <img src="../src/img/Untitled.png" alt="template6">
+                    <img src="../src/img/temple_timthan.png" width="330px" height="250px" alt="template6">
                   </div>
                 </a>
               </div>
