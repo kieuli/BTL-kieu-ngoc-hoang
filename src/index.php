@@ -160,16 +160,16 @@
                 <label>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
                 </label>
-                <a class="sidebar__menu-items-link" href=""><span>Mẫu màu cam </span></a>
+                <a class="sidebar__menu-items-link" href="./templates/template2"><span>Mẫu màu cam </span></a>
               </div>
               <ul class="bar__menuChild">
                 <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
+                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="./templates/template1">
                     <span>Mẫu màu xanh </span>
                   </a>
                 </li>
                 <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
+                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="./templates/template3">
                     <span>Mẫu màu tím </span>
                   </a>
                 </li>
@@ -185,31 +185,31 @@
                 <label>
                   <svg class="icon__active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 12" fill="currentColor" width="1em" height="1em"><style></style><path fill-rule="evenodd" clip-rule="evenodd" d="M6 6L.6 0 0 .6 4.9 6 .1 11.4l.5.6z"></path></svg>
                 </label>
-                <a class="sidebar__menu-items-link" href=""><span>Phổ biến nhất</span></a>
+                <a class="sidebar__menu-items-link" href="./index.php"><span>Phổ biến nhất</span></a>
               </div>
               <ul class="bar__menuChild bar__menuChild-active">
                 <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
+                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="./templates/template1">
                     <span>Mẫu nền xanh lá </span>
                   </a>
                 </li>
                 <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
+                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="./templates/template3">
                     <span>Mẫu nền màu tím </span>
                   </a>
                 </li>
                 <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
+                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="./templates/template4">
                     <span>Mẫu nền xanh dương </span>
                   </a>
                 </li>
                 <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
+                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="./templates/template5">
                     <span>Blog cá nhân cho bạn</span>
                   </a>
                 </li>
                 <li class="bar__menuChild-item">
-                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="">
+                  <a class="sidebar__menu-items-link bar__menuChild-item-link" href="./templates/template6">
                     <span> Mẫu tối giản   </span>
                   </a>
                 </li>
