@@ -117,7 +117,7 @@
                <div class="alert alert-info 
     				            text-center">
 				   <i class="fa fa-comments d-block fs-big"></i>
-	               No messages yet, Start the conversation
+	               không có tin nhắn
 			   </div>
     	   	<?php } ?>
     	   </div>

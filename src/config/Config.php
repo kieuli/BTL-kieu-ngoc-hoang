@@ -1,20 +1,20 @@
 <?php
 
-	$con = mysqli_connect("localhost","root","","btl") or die("Can not connect to MySQL");
+	$con = mysqli_connect("http://185.27.134.10/","sql112.epizy.com","u6zfC1rDLrWBt","epiz_30281102_XXX") or die("Can not connect to MySQL");
 	mysqli_set_charset($con,"UTF8");
 
  ?>
 <?php 
 
 # server name
-$sName = "localhost";
+$sName = "http://185.27.134.10/";
 # user name
-$uName = "root";
+$uName = "sql112.epizy.com";
 # password
-$pass = "";
+$pass = "u6zfC1rDLrWBt";
 
 # database name
-$db_name = "btl";
+$db_name = "epiz_30281102_XXX";
 
 #creating database connection
 try {

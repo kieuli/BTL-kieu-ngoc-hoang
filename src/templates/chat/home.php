@@ -86,7 +86,7 @@
 	    				          align-items-center p-2">
 	    					<div class="d-flex
 	    					            align-items-center">
-	    					    <img src="uploads/<?=$conversation['avata']?>"
+	    					    <img src="public/images<?=$conversation['avata']?>"
 	    					         class="w-10 rounded-circle">
 	    					    <h3 class="fs-xs m-2">
 	    					    	<?=$conversation['name']?><br>
